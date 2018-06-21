@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数学基础," />
 
 
 
@@ -94,14 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="All tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="（行变换消元中的）初等矩阵与置换矩阵初等矩阵用于消元&amp;ensp;($E_{ij}M$)$E_{ij}$表示将矩阵第i行第j列的元素变为0所需要（左乘）的初等矩阵初等矩阵在单位矩阵的基础上，只变换对角线下方某个元素的值 举个栗子，如下矩阵表示，M第二行乘-3，加到第三行上，从而消掉M第三行第二列的数，使之变为0$E_{32}=\left[\begin{matrix}1&amp;amp;0&amp;amp;0\\0&amp;">
+<meta name="keywords" content="数学基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于线代的新的理解（一）">
+<meta property="og:url" content="http://yoursite.com/2018/06/21/关于线代的新的理解（一）/index.html">
 <meta property="og:site_name" content="熊猫拯救世界">
+<meta property="og:description" content="（行变换消元中的）初等矩阵与置换矩阵初等矩阵用于消元&amp;ensp;($E_{ij}M$)$E_{ij}$表示将矩阵第i行第j列的元素变为0所需要（左乘）的初等矩阵初等矩阵在单位矩阵的基础上，只变换对角线下方某个元素的值 举个栗子，如下矩阵表示，M第二行乘-3，加到第三行上，从而消掉M第三行第二列的数，使之变为0$E_{32}=\left[\begin{matrix}1&amp;amp;0&amp;amp;0\\0&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-12T08:12:53.644Z">
+<meta property="og:updated_time" content="2018-06-21T14:27:34.516Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="All tags">
+<meta name="twitter:title" content="关于线代的新的理解（一）">
+<meta name="twitter:description" content="（行变换消元中的）初等矩阵与置换矩阵初等矩阵用于消元&amp;ensp;($E_{ij}M$)$E_{ij}$表示将矩阵第i行第j列的元素变为0所需要（左乘）的初等矩阵初等矩阵在单位矩阵的基础上，只变换对角线下方某个元素的值 举个栗子，如下矩阵表示，M第二行乘-3，加到第三行上，从而消掉M第三行第二列的数，使之变为0$E_{32}=\left[\begin{matrix}1&amp;amp;0&amp;amp;0\\0&amp;">
 
 
 
@@ -130,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/21/关于线代的新的理解（一）/"/>
 
 
 
 
 
-  <title>All tags | 熊猫拯救世界</title>
+  <title>关于线代的新的理解（一） | 熊猫拯救世界</title>
   
 
 
@@ -257,40 +261,155 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/关于线代的新的理解（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿岑">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="熊猫拯救世界">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">All tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 2 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/优化理论/" style="font-size: 12px; color: #ccc">优化理论</a> <a href="/tags/数学基础/" style="font-size: 30px; color: #111">数学基础</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">关于线代的新的理解（一）</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T21:19:53+08:00">
+                2018-06-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p><strong><font size="4">（行变换消元中的）初等矩阵与置换矩阵</font></strong><br><strong>初等矩阵用于消元&ensp;($E_{ij}M$)</strong><br>$E_{ij}$表示将矩阵第i行第j列的元素变为0所需要（左乘）的初等矩阵<br>初等矩阵在单位矩阵的基础上，只变换对角线下方某个元素的值</p>
+<p>举个栗子，如下矩阵表示，M第二行乘-3，加到第三行上，从而消掉M第三行第二列的数，使之变为0<br>$E_{32}=\left[\begin{matrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;-3&amp;1\end{matrix}\right]$<br>这里可以得到一个非常有意思的推论：初等矩阵的逆，为，该初等矩阵在单位矩阵基础上<strong>变化的元素取相反数</strong>所的到的矩阵<br>这个可以通过语言来证明：一单位矩阵乘以一初等矩阵，比如上述的$E_{32}$，将该单位矩阵的第2行乘-3加到第三行上。如何让此矩阵恢复为单位矩阵呢，显而易见再让该矩阵的第二行乘3加到第三行便可得到结果。所以：<br>$E_{32}^{-1}=\left[\begin{matrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;-(-3)&amp;1\end{matrix}\right]=\left[\begin{matrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;3&amp;1\end{matrix}\right]$</p>
+<p><strong>置换矩阵用于交换行&ensp;($PM$)。</strong><br>如果想要M的第i行与第j行交换，则把单位矩阵的第i行与第j行交换即可得到置换矩阵P</p>
+<p><br><br><strong><font size="4">（列变换消元中的）初等矩阵与置换矩阵</font></strong><br><strong>先看置换矩阵&ensp;($MP$)</strong><br>如果想让矩阵M的第i列和第j列交换，则把单位矩阵的第i行与第j行交换即可得到置换矩阵P<br>注意：此时置换矩阵要右乘M</p>
+<p><strong>再看初等矩阵&ensp;($ME_{ij}$)</strong><br>这里初等矩阵的作用是消除矩阵M对角线上方的元素<br>这样的初等矩阵为改变单位矩阵对角线上方某个元素的值（具体如何变可依据上面的例子以及下面对矩阵乘法的理解2推算出来）<br>注意：和置换矩阵相仿，也是要右乘</p>
+<p><br><br><strong><font size="4">矩阵乘法有多种理解方式($AB=M$)</font></strong></p>
+<ol>
+<li>$M_{ij}=\sum_{k}{A_ik×B_kj}$</li>
+<li>M的第i列可以看作，以B的第i列为系数，A的所有列线性组合得到的结果</li>
+<li>M的第i行可以看作，以A的第i行为系数，B的所有行线性组合得到的结果</li>
+</ol>
+<p>这一部分非常重要，尤其是2和3这两种理解方式，可以大大简化我们的矩阵计算。并且！<strong>上述（行）消元内容，就是理解方式3的一个应用！</strong></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学基础/" rel="tag"># 数学基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/21/Determinants/" rel="next" title="Determinants">
+                <i class="fa fa-chevron-left"></i> Determinants
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -490,10 +609,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -542,6 +661,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
